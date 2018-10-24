@@ -8,7 +8,7 @@ let inputToDo = document.querySelector('#container');
 
 ReactDOM.render (
     <div>
-        <ToDoInput toDoText = ''  addTodo = {this.addTodo} />
+        <ToDoInput />
         <NewToDo/>
 
     </div>,
