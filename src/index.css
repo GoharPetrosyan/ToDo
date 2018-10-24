@@ -1,14 +1,66 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 50px;
+    background-color: blueviolet;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#container{
+    display: flex;
+    justify-content: center;
 }
+
+.inputArea {
+    background-color: #b2dfdb;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.formClass {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttonClass {
+    width: 80px;
+    /* height: 30px; */
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #004d40;
+    background-color: #004d40;
+    color: white;
+    
+}
+
+.inputClass {
+
+    border-radius: 3px;
+    border: 1px solid #004d40;
+    padding: 5px;
+    width: 250px;
+}
+
+.box {
+    width: 400px;
+    height: 85px;
+    background-color: #dcedc8;
+    border: 1px solid #dcedc8;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+
+.buttonNew {
+    width: 50px;
+    height: 25px;
+    background-color: #d9534f;
+    color: white;
+    float: right;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+
+    
+}
+
