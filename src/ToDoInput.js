@@ -5,7 +5,7 @@ class ToDoInput extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {value: 'test'};
+        this.state = {value: ''};
 
         this.handelChange = this.handelChange.bind(this);
         this.addTodo = this.addTodo.bind(this);
@@ -15,11 +15,16 @@ class ToDoInput extends Component {
 
     handelChange(e) {
 
-        console.log('Change here')
+        this.setState({value: e.target.value});
     }
 
-    addTodo() {
-        console.log('Added')
+    addTodo(todo) {
+
+        if (todo.length > 0) {
+            this.props.addTodo(todo);
+            this.setState({value: ''})
+        }
+        
     }
 
     render () {
@@ -34,8 +39,9 @@ class ToDoInput extends Component {
                     <form className = 'formClass'>
                         <input 
                         placeholder = 'To Do text goes here' 
-                        type = 'text' className = 'inputClass' 
-                        value = '' 
+                        type = 'text' 
+                        value = {this.state.value}
+                        className = 'inputClass' 
                         onChange = {this.handelChange} 
                         />
                         

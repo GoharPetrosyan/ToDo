@@ -60,7 +60,14 @@ body {
     float: right;
     border: 1px solid #d9534f;
     border-radius: 5px;
+}
 
-    
+ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border:  0px 0px 0px 0px;
+    display: table;
+    table-layout: fixed;
+    display: inline;
 }
 
