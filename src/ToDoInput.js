@@ -6,24 +6,26 @@ class ToDoInput extends Component {
         super(props);
 
         this.state = {value: ''};
+        this.totaId = 0;
 
         this.handelChange = this.handelChange.bind(this);
-        this.addTodo = this.addTodo.bind(this);
+        this.writeTodo = this.writeTodo.bind(this);
 
         }
 
 
     handelChange(e) {
-
+    
         this.setState({value: e.target.value});
     }
 
-    addTodo(todo) {
-
-        if (todo.length > 0) {
-            this.props.addTodo(todo);
+    writeTodo() {
+        if (this.state.value.length !== 0) {
+            this.props.addTodo(this.state.value);
             this.setState({value: ''})
+            this.totaId++;
         }
+        
         
     }
 
@@ -34,6 +36,7 @@ class ToDoInput extends Component {
                     <h1>
                         To Do List
                     </h1>
+                    <h5>Total {this.totaId} todo</h5> 
                 </div>
                 <div className = 'inputArea'>
                     <form className = 'formClass'>
@@ -47,7 +50,7 @@ class ToDoInput extends Component {
                         
                         <button type='button' 
                         className = 'buttonClass'
-                        onClick = { () => this.addTodo(this.state.value) }
+                        onClick = { () => this.writeTodo(this.state.value) }
                         >
                          Creat </button>
                     </form>

@@ -11,12 +11,8 @@ class App extends Component {
 
         this.state = {
 
-            todo: [
-                {id: 0, text: 'make Dinner tonight!'},
-                {id: 1, text: 'Dinner'},
-                {id: 3, text: 'Tonight'},
-            ],
-            nextid: 3
+            todo: [ ],
+            nextid: 4
         }
 
         this.addTodo = this.addTodo.bind(this)
@@ -24,7 +20,12 @@ class App extends Component {
     }
 
     addTodo(todoText) {
-        console.log('ToDoAdded: ', todoText)
+
+        const prevuesTodo = this.state.todo;
+        prevuesTodo.push({id: prevuesTodo.length + 1, text: todoText});
+        this.setState({
+            todo: prevuesTodo
+        })
     }
 
     render() {
