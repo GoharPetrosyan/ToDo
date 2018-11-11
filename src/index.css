@@ -1,77 +1,100 @@
 body {
     padding: 50px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
-#container{
+.app {
+    /* width: 1200px; */
+    /* height: 600px; */
+    border: 2px solid black;
     display: flex;
-    justify-content: center;
-}
-
-.inputArea {
-    background-color: #b2dfdb;
-    width: 400px;
-    height: 60px;
-    border-radius: 5px;
-}
-
-.formClass {
+    align-items: stretch;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
 }
 
-.buttonClass {
-    width: 80px;
-    /* height: 30px; */
-    margin-left: 10px;
-    border-radius: 3px;
-    border: 1px solid #004d40;
-    background-color: #004d40;
-    color: white;
-    
+.postView {
+    width: 70%;
+    border: 1px solid green;
+    text-align: center;
 }
 
-.inputClass {
-
-    border-radius: 3px;
-    border: 1px solid #004d40;
-    padding: 5px;
-    width: 250px;
-}
-
-.box {
-    width: 400px;
-    height: 85px;
-    background-color: #dcedc8;
-    border: 1px solid #dcedc8;
-    border-radius: 5px;
-    margin-top: 25px;
-    padding: 5px;
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    width: 30%;
+    padding-left: 200px;
+    padding-right: 150px;
     box-sizing: border-box;
+    height: 250px;
+}
+
+.flexContainer img {
+    width: 50px;
+    height: 50px;
+   
+}
+
+.flexContainer button {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-style: none;
+    color: #6475ab;   
+}
+
+.postComment {
+    border: 2px solid blue;
+    padding: 10px;
     
 }
 
-.imgEdit {
-    display: none;
+.test {
+    display: flex;
 }
 
-.buttonNew {
+.postComment img {
     width: 50px;
-    height: 25px;
-    background-color: #d9534f;
-    color: white;
-    float: right;
-    border: 1px solid #d9534f;
+    height: 50px;
+    margin-right: 20px;
+    
+}
+
+.commentText {
+    width: 85%;
+    height: 50px;
+}
+
+.newCommrnts {
+    height: 70px;
+}
+.commentBtn {
+    /* margin-bottom: 40px; */
+    margin-left: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #0089ff;
+    border: 1px solid #0089ff;
     border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+
+    
 }
 
-ul {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    border:  0px 0px 0px 0px;
-    display: table;
-    table-layout: fixed;
-    display: inline;
+.textContainer {
+    padding: 10px;
+    display: flex;
 }
 
+.newComment {
+    padding: 10px;
+    border: 2px solid purple;
+    margin-bottom: 10px;
+}
+
+.removeComment {
+   margin-left: 1100px;
+}
